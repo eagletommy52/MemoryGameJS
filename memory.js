@@ -307,6 +307,7 @@ class MatchingGame {
         }
       };
       picReq.onerror = () => {
+    //Add failback option to use offline images if picsum is not responding
         image.src = `images/${offlinePicsArr[i]}.jpg`;
         picArr.push(image);
         if (i == length - 1) {
