@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="memory.css">
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>Memory<br>Game</h1>
+        <select name="gameDiff" id="diffSelect">
+            <option value="12">Novice (12 Pairs)</option>
+            <option value="18">Aficionado (18 Pairs)</option>
+            <option value="25">Professional (25 Pairs)</option>
+            <option value="30">Ninja (30 Pairs)</option>
+        </select>
+        <button id="playBtn" disabled>PLAY</button>
+        <button id="highScore" style="display: none; height: auto; width: auto;">Submit Highscore</button>
+        <div id="msgBox"></div>
+    </header>
+    <div id="app"></div>
+    <footer>
+            <span id="score-box">Attempts: &nbsp;0 &nbsp;Matches: &nbsp;0 &nbsp;Average: &nbsp;0% &nbsp;Score: &nbsp;0 &nbsp;</span>
+            <span id="timer-box" style="color:red">00:00 </span>
+    </footer>
+    <script src="memory.js"></script>
+</div>
+</body>
+</html>
